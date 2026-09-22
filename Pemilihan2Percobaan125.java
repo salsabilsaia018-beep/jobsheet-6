@@ -10,8 +10,11 @@ public class Pemilihan2Percobaan125 {
         int tahun = salsa25.nextInt();
 
         if ((tahun % 4) == 0) {
-            if ((tahun % 100) != 0)
+            if ((tahun % 100) != 0){
                 System.out.println("tahun kabisat");
+            } else {
+              System.out.println("buka tahun kabisat");  
+            }
         } else {
             System.out.println("buka tahun kabisat");
         }
