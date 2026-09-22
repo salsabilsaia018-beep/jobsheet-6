@@ -9,16 +9,20 @@ public class Pemilihan2Percobaan125 {
         System.out.print("masukan tahun anda : ");
         int tahun = salsa25.nextInt();
 
-        if ((tahun % 4) == 0) {
-            if ((tahun % 100) != 0){
+       if ((tahun % 4) == 0) {
+            if ((tahun % 100) != 0) {
                 System.out.println("tahun kabisat");
             } else {
-              System.out.println("buka tahun kabisat");  
+                // Pengecekan tambahan untuk kelipatan 400 
+                if ((tahun % 400) == 0) {
+                    System.out.println("tahun kabisat");
+                } else {
+                    System.out.println("bukan tahun kabisat");
+                }
             }
         } else {
-            System.out.println("buka tahun kabisat");
+            System.out.println("bukan tahun kabisat");
         }
-
         salsa25.close();
     }
 }
